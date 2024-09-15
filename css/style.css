@@ -21,6 +21,12 @@ body {
     min-height: calc(100vh - 3.5rem);
 }
 
+@media (max-width:640px) {
+    .home {
+        min-height: calc(100vh - 3.2rem);
+    }
+}
+
 
 h1 {
     font-family: "Pacifico", cursive;
@@ -90,7 +96,13 @@ h3 i:last-child {
 }
 
 
-
+@media (max-width:640px) {
+    h3 span,
+    h3 i:first-child,
+    h3 i:last-child {
+        font-size: 1.1rem;
+    }
+}
 
 .form-control:focus {
     color: #212529;
@@ -186,4 +198,10 @@ footer a:hover::after {
     bottom: 0;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.737);
+}
+
+@media (max-width:640px) {
+    footer p {
+        font-size: .8rem;
+    }
 }
